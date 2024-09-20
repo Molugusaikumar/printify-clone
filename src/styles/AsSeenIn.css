@@ -1,0 +1,19 @@
+/* src/styles/AsSeenIn.css */
+.as-seen-in-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between logos */
+    margin-top: 20px;
+  }
+  
+  .logos-container img {
+    height: 60px; /* Adjust height as needed */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  

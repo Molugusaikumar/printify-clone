@@ -1,0 +1,62 @@
+/* src/styles/BestSellers.css */
+.bestsellers-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .bestsellers-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Add the horizontal scroll */
+  .bestsellers-scroller {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: thin; /* Firefox */
+  }
+  
+  .bestsellers-scroller::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .bestsellers-scroller::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .bestseller-item {
+    flex: 0 0 auto; /* Prevent shrinking and set width */
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bestseller-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .bestseller-item p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .bestseller-item {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bestseller-item {
+      width: 120px;
+    }
+  }
+  

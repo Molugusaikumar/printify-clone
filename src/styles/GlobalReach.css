@@ -1,0 +1,54 @@
+/* src/components/GlobalReach.css */
+.global-reach-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .subscribers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between subscribers */
+    margin-top: 20px;
+  }
+  
+  .subscriber {
+    background-color: #f9f9f9; /* Light background for each subscriber card */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Three in a row, accounting for gaps */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: center;
+  }
+  
+  .subscriber img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular photos */
+    margin-bottom: 10px;
+  }
+  
+  .subscriber h3 {
+    font-size: 18px; /* Name size */
+    margin: 10px 0 5px;
+  }
+  
+  .subscriber p {
+    font-size: 14px; /* Description size */
+    color: #555; /* Darker text for readability */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .subscriber {
+      width: calc(50% - 20px); /* Two in a row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .subscriber {
+      width: 100%; /* One in a row on mobile screens */
+    }
+  }
+  
