@@ -12,7 +12,7 @@ const IdeasAndInspiration = () => {
 
   return (
     <div className="ideas-section">
-      <h2>Ideas and Inspiration</h2>
+      <h2>Ideas and Inspirationsss</h2>
       <div className="ideas-grid">
         {ideasPhotos.map((item) => (
           <div key={item.id} className="idea-item">
